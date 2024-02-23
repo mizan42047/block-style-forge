@@ -1,0 +1,19 @@
+.editor-styles-wrapper{
+    .bsf-selection-mode-overlay{
+        position: fixed;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+        z-index: 10;
+        max-width: none !important;
+        width: 100%;
+
+        &.bsf-selection-mode-overlay-before{
+            top: 0;
+        }
+
+        &.bsf-selection-mode-overlay-after{
+            bottom: 0;
+        }
+    }
+}

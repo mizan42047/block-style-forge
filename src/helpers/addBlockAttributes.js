@@ -3,15 +3,15 @@ const addBlockAttributes = (settings, name) => {
         ...settings,
         attributes: {
             ...settings?.attributes,
-            blockStyleForgeClientID: {
+            blockStyleForgeWrapperClass: {
                 type: "string"
             },
-            blockStyleForgeControls: {
+            blockStyleForgeRepeater: {
                 type: "array",
                 default: [
                     {
-                        blockStyleForgeSelector: "wrapper",
-                        blockStyleForgeClasses: ""
+                        selector: "",
+                        classes: "",
                     }
                 ]
             },

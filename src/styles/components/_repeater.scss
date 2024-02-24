@@ -1,0 +1,72 @@
+.bsf-repeater {
+    .bsf-repeater__item {
+        position: relative;
+        margin: 10px 0;
+
+        .repeater-action-btns {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0px;
+            max-height: 45px;
+
+            .bsf-repeater__item__action-button {
+                border-left: 1px solid #eee;
+                height: 100%;
+
+                &:focus:not(:disabled) {
+                    box-shadow: none;
+                }
+            }
+        }
+
+        .bsf-repeater__item__panel {
+            border: 1px solid #eee;
+
+            .components-panel__body-title {
+                .components-button {
+                    padding: 12px 14px !important;
+
+                    &[aria-expanded="true"] {
+                        border-bottom: 1px solid #000000 !important;
+                    }
+                    &:focus {
+                        box-shadow: none;
+                    }
+                }
+
+                svg {
+                    display: none;
+                }
+            }
+
+            &.is-opened {
+                .components-button {
+                    &:not(.components-circular-option-picker__clear, .bsf-icon-picker-remove-icon) {
+                        border-bottom: 1px solid #eee;
+                    }
+                }
+            }
+
+        }
+    }
+
+    &__add-button {
+        display: flex !important;
+        margin: 0 auto;
+        background: #000000 !important;
+        color: #fff !important;
+        border-radius: 3px;
+        transition: all 0.3s ease;
+        gap: 0 !important;
+        padding: 16px 8px !important;
+
+        &:hover {
+            background: #000000e0 !important;
+        }
+
+        &:focus:not(:disabled) {
+            box-shadow: none !important;
+        }
+    }
+}
